@@ -1,5 +1,5 @@
 * {
-    /* outline: solid red 1px; */
+    /* outline: solid blue 1px; */
     font-family: 'Roboto', sans-serif;
 
     --white: #dcdcdc;
@@ -10,17 +10,18 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* height: 100vh; */
+
     margin: 0;
 
     display: flex;
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
 
     background-color: var(--white);
     color: var(--black2);
+    transition: 500ms;
+
   }
   
   .calculator {

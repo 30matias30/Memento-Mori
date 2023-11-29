@@ -1,0 +1,53 @@
+#toggle-container {
+    display: none;
+
+    /* display: flex; */
+    justify-content: space-around;
+    align-items: center;
+
+    position: relative;
+
+    cursor: pointer;
+
+    width: 85px;
+    height: 40px;
+
+    border-radius: 25px;
+
+    background-color: var(--black2);
+    transition: 500ms;
+}
+
+#toggle-container.dark {
+    background-color: var(--white);
+    transition: 500ms;
+
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    /* transform: scale(0.7); */
+    border-radius: 25px;
+    /* box-shadow: 3px 3px 8px #c4c4c4,
+               -3px -3px 8px #fff; */
+    background-image: url(/Icons/son.png);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 500ms;
+}
+
+#toggle-container.dark .toggle {
+    left: 40px;
+    background-image: url(/Icons/moon.png);
+}
+
+body.dark {
+    background-color: var(--black2);
+    color: var(--white);
+
+    transition: 500ms;
+}
