@@ -33,6 +33,7 @@ function calculateMementoMori() {
   const calculatorBody = document.getElementById("calculator");
   const pdfButton = document.getElementById("pdfButton");
   const body = document.querySelector("body");
+  const link = document.getElementById("link");
 
   const birthdate = new Date(birthdateInput.value);
   const currentDate = new Date();
@@ -66,7 +67,7 @@ function calculateMementoMori() {
   // Habilita el boton de PDF
   pdfButton.disabled = false;
   body.classList.remove('centered');
-
+  link.style.display = "inline-block";
 }
 
 function drawSquares(weeksLived, totalWeeks, weeksInAYear) {
@@ -157,7 +158,7 @@ function obtenerElementoAleatorio() {
 
 function goHome() {
 
-  window.location.href ="http://127.0.0.1:5500/";
+  window.location.href ="https://30matias30.github.io/Memento-Mori/";
 
 }
 
