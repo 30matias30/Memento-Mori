@@ -18,10 +18,15 @@ body {
     align-items: center;
     justify-content: center;
 
+
     background-color: var(--white);
     color: var(--black2);
     transition: 500ms;
 
+  }
+
+  .centered {
+    height: 100vh;
   }
   
   .calculator {
@@ -37,6 +42,17 @@ body {
 
   h1 {
     letter-spacing: 3px;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+
+    cursor: pointer;
+
+    transition: 1000ms;
+  }
+
+  h1:hover {
+    scale: 1.1;
+    transition: 1000ms;
   }
 
   /* num-column */
@@ -84,9 +100,9 @@ body {
   .black-square,
   .white-square,
   .partial-black-square {
-    width: 10px;
-    height: 10px;
-    margin: 2px;
+    width: 6px;
+    height: 6px;
+    margin: 1px;
   }
   
   .black-square {
@@ -109,18 +125,51 @@ body {
   .row {
     display: flex;
     align-items: center;
+    position: relative;
+  }
+
+  .row:nth-child(10),
+  .row:nth-child(20),
+  .row:nth-child(30),
+  .row:nth-child(40),
+  .row:nth-child(50),
+  .row:nth-child(60),
+  .row:nth-child(70),
+  .row:nth-child(80) {
+    margin-bottom: 4px;
   }
 
   .number-column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     margin-left: 5px;
   }
   
   .number-item {
-    font-size: 12px;
-    height: 16px;
+    font-size: 9px;
+    height: 10px;
+    margin-top: 1px;
 
     color: var(--black);
   }
+
+  .none {
+    display: none;
+  }
+
+  .label-row {
+      position: absolute;
+
+      font-size: 12px;
+
+      right: -8px;
+      width: 1px;
+      text-align: left;
+  }
+
+.quote {
+  max-width: 65%;
+  text-align: center;
+  margin: .5rem;
+}
