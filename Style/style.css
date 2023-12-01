@@ -1,5 +1,5 @@
 * {
-    outline: solid blue 1px;
+    /* outline: solid blue 1px; */
     font-family: 'Roboto', sans-serif;
 
     --white: #dcdcdc;
@@ -43,7 +43,7 @@ body {
   h1 {
     letter-spacing: 3px;
     margin-top: 0.1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 
     cursor: pointer;
 
@@ -169,13 +169,14 @@ body {
   }
 
 .quote {
-  max-width: 65%;
+  max-width: 75%;
   text-align: center;
   margin: .5rem;
 }
 
 #pdfButton {
 
+  margin-top: 0.2rem;
   margin-bottom: 1rem;
 }
 
