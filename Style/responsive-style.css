@@ -1,0 +1,18 @@
+@media only screen and (min-height: 1000px) {
+
+    h1 {
+        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    #pdfButton {
+        margin-top: 0;
+    }
+
+    .quote {
+        max-width: 70%;
+    }
+
+
+
+}
