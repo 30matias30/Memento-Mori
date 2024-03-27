@@ -23,7 +23,7 @@ const quotesArray = [
   // "“”"
 ];
 
-const weeksInAYear = 52.1429; // Asumiendo 52 semanas en un año
+const weeksInAYear = 52; // Asumiendo 52 semanas en un año
 const totalWeeksIn80Years = 80 * weeksInAYear;
 
 function calculateMementoMori() {
